@@ -1,0 +1,11 @@
+**English** | [中文](../EN/index.md)
+## 目录
+
+- [快速开始](guide.md)
+- [安装指南](install.md)
+- [常见问题](faq.md)
+
+## 外部资源
+
+- [官方网站](https://example.com)
+- [视频教程](https://www.youtube.com/xxx)
