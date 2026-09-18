@@ -1,8 +1,11 @@
-remote_theme: just-the-docs/just-the-docs
-title: 你的产品帮助文档
-description: 产品使用手册
+# docs/_config.yml
 
-plugins:
-  - jekyll-remote-theme
+# 使用浅色主题（默认）
+color_scheme: light
 
+# 开启搜索
 search_enabled: true
+
+# 导航栏宽度（与自定义 CSS 中的宽度保持一致）
+# 注意：如果自定义 CSS 中的宽度生效，这个值可能被覆盖，但保持同步是个好习惯
+nav_width: 16.5rem
