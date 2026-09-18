@@ -1,4 +1,4 @@
-**English** | [中文](../EN/index.md)
+[English](../en/index.md) | **中文**
 ## 目录
 
 - [快速开始](guide.md)
