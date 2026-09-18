@@ -1,98 +1,24 @@
 // docs/_sass/custom/custom.scss
 
-// ============================================
-// 侧边栏基础样式
-// ============================================
-
+// 只调整侧边栏背景色和边框
 .side-bar {
-  // 设置侧边栏宽度，在中等屏幕及以上生效
-  @include mq(md) {
-    width: 16.5rem; // 推荐的固定宽度
-  }
-  // 在更大屏幕上，限制最大宽度，避免过宽
-  @include mq(lg) {
-    width: 16.5rem;
-  }
-  
-  // 侧边栏背景色，浅灰色，类似参考网站
-  background-color: #f7f9fc; 
-  // 侧边栏右侧的细边框
+  background-color: #f7f9fc;
   border-right: 1px solid #e8ecf1;
 }
 
-// ============================================
-// 侧边栏内部导航链接的样式
-// ============================================
+// 导航链接的基础样式
+.nav-list-link {
+  font-size: 0.9rem;
+  color: #2c3e50;
 
-.nav-list {
-  // 移除列表默认的缩进
-  padding-left: 0;
-  
-  // 顶层导航项的样式
-  .nav-list-item {
-    // 增加每一行的上下间距，让导航更舒展
-    padding: 0.4rem 0;
-    
-    // 导航链接文字样式
-    .nav-list-link {
-      // 字体大小，可根据喜好微调
-      font-size: 0.9rem;
-      // 文字颜色，深灰色，比默认黑色更柔和
-      color: #2c3e50;
-      // 增加左侧内边距，让文字与边缘有呼吸感
-      padding-left: 0.75rem;
-      // 去掉链接的下划线
-      text-decoration: none;
-      // 添加过渡效果，让悬停更平滑
-      transition: all 0.15s ease-in-out;
-      
-      // 鼠标悬停时的样式
-      &:hover {
-        // 悬停时背景色变浅灰
-        background-color: #eef1f5;
-        // 悬停时文字颜色变深，增加对比
-        color: #1a252f;
-      }
-      
-      // 当前激活页面的样式
-      &.active {
-        // 激活项背景色加深
-        background-color: #e3e8ef;
-        // 激活项文字加粗
-        font-weight: 600;
-        // 激活项左侧加一条品牌色竖条（可替换成你的品牌色）
-        border-left: 3px solid #4a7cf7;
-        // 因为加了竖条，左侧内边距相应减少
-        padding-left: calc(0.75rem - 3px);
-      }
-    }
-    
-    // ============================================
-    // 子级导航项的缩进
-    // ============================================
-    // 每一级子菜单，都在父级基础上增加左内边距
-    .nav-list .nav-list-item {
-      .nav-list-link {
-        padding-left: 1.5rem; // 第二级缩进
-      }
-      .nav-list .nav-list-item {
-        .nav-list-link {
-          padding-left: 2.25rem; // 第三级缩进
-        }
-        .nav-list .nav-list-item {
-          .nav-list-link {
-            padding-left: 3rem; // 第四级缩进，可根据需要继续增加
-          }
-        }
-      }
-    }
+  &:hover {
+    background-color: #eef1f5;
+    color: #1a252f;
+  }
+
+  &.active {
+    font-weight: 600;
+    background-color: #e3e8ef;
+    border-left: 3px solid #4a7cf7;
   }
 }
-
-// ============================================
-// 可选的：调整主内容区域的最大宽度
-// ============================================
-// 如果觉得内容区域被侧边栏挤压得太窄，可以取消下面这行的注释
-// .main-content {
-//   max-width: 60rem; 
-// }
