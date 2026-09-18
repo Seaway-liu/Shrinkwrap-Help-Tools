@@ -1,3 +1,4 @@
+[English](../en/install.md) | **中文**
 # 安装指南
 
 ## 安装步骤

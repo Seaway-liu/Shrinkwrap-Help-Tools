@@ -1,3 +1,5 @@
+[English](../en/indexguide.md) | **中文**
+
 # 快速开始
 
 
