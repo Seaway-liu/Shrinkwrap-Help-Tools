@@ -5,3 +5,5 @@ description: 产品使用手册
 
 search_enabled: true
 color_scheme: light
+
+nav_width: 16.5rem
