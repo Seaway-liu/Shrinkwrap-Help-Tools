@@ -1,3 +1,10 @@
+---
+layout: default
+title: 快速开始
+parent: 中文首页
+nav_order: 3
+---
+
 [English](../en/indexguide.md) | **中文**
 
 # 快速开始

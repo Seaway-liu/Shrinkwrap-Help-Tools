@@ -1,4 +1,11 @@
+---
+layout: default
+title: 中文首页
+nav_order: 1
+---
+
 [English](../en/index.md) | **中文**
+
 ## 目录
 
 - [快速开始](guide.md)

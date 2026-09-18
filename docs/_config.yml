@@ -1,0 +1,8 @@
+remote_theme: just-the-docs/just-the-docs
+title: 你的产品帮助文档
+description: 产品使用手册
+
+plugins:
+  - jekyll-remote-theme
+
+search_enabled: true

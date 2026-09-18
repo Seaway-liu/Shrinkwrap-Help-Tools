@@ -1,4 +1,12 @@
+---
+layout: default
+title: 安装指南
+parent: 中文首页
+nav_order: 2
+---
+
 [English](../en/install.md) | **中文**
+
 # 安装指南
 
 ## 安装步骤
