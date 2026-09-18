@@ -111,13 +111,21 @@
   color: #84bbee !important;
 }
 
+</style>
+
+
 
 /* 隐藏正文末尾的自动子页面列表 */
-.main-content .child-list,
-.main-content ul.child-list,
-.main-content .page-children {
-  display: none !important;
-}
-
-
-</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('h2.text-delta').forEach(function (el) {
+      if (el.textContent.trim() === 'Table of contents') {
+        el.style.display = 'none';
+        var next = el.nextElementSibling;
+        if (next && next.tagName === 'UL') {
+          next.style.display = 'none';
+        }
+      }
+    });
+  });
+</script>
