@@ -6,11 +6,6 @@
     width: 13rem !important;   /* 调窄侧边栏，默认约 15.5rem */
   }
 
-  .nav-list-link {
-    font-size: 0.9rem;
-  }
-
-
   /* 侧边栏顶部站点标题 */
   .site-title {
     color: #f7fbff !important; 
@@ -22,6 +17,49 @@
     color: #e5e8ec !important; 
   }
 
+  /* 鼠标悬停 */
+  .nav-list-link:hover {
+    background-color: #dce4ec !important;
+    color: #1a252f !important;
+  }
+
+  /* 当前激活页面 */
+  .nav-list-link.active {
+    background-color: #d0dae5 !important;
+    color: #1a252f !important;
+    font-weight: 600;
+    border-left: 3px solid #4a6fa5 !important;
+  }
+
+  /* 子级导航链接（层级缩进后） */
+  .nav-list .nav-list .nav-list-link {
+    color: #3a5a7a !important;
+  }
+
+  /* 搜索框 */
+  .search-input {
+    background-color: #ffffff !important;
+    color: #2c3e50 !important;
+    border: 1px solid #d0dae5 !important;
+  }
+
+  /* 搜索框占位文字 */
+  .search-input::placeholder {
+    color: #8a9bb0 !important;
+  }
+
+  /* 正文标题（主内容区的 h1、h2 等） */
+  .main-content h1,
+  .main-content h2,
+  .main-content h3,
+  .main-content h4 {
+    color: #1a252f !important;
+  }
+
+  /* 正文文字 */
+  .main-content {
+    color: #2c3e50 !important;
+  }
 
 
 </style>
