@@ -3,4 +3,5 @@ remote_theme: just-the-docs/just-the-docs
 title: Shrinkwrap Help Tools 帮助文档
 description: 产品使用手册
 
+search_enabled: true
 color_scheme: light
