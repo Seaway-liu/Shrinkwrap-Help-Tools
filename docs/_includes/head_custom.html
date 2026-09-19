@@ -18,51 +18,47 @@
     color: #e5e8ec !important; 
   }
 
-/* 侧边栏文字-鼠标悬停：白色背景 + 黑色文字 */
-.nav-list-link:hover {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-}
-
-/* 侧边栏文字-激活状态：白色背景 + 黑色文字 */
-.nav-list-link.active {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  font-weight: 600;
-  border-left: 3px solid #4a6fa5 !important;
-}
-
-/* 子级导航链接（层级缩进后） */
-  .nav-list .nav-list .nav-list-link {
-    color: #ffffff !important;
+  /* 侧边栏文字-鼠标悬停：白色背景 + 黑色文字 */
+  .nav-list-link:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
   }
 
-/* 子级导航默认状态：白色文字 */
-.side-bar .nav-list .nav-list .nav-list-link {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
-}
-
-/* 子级导航悬停：白色背景 + 黑色文字 */
-.side-bar .nav-list .nav-list .nav-list-link:hover {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  -webkit-text-fill-color: #000000 !important;
-}
-
-/* 子级导航激活：白色背景 + 黑色文字 */
-.side-bar .nav-list .nav-list .nav-list-link.active {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-  -webkit-text-fill-color: #000000 !important;
-  font-weight: 600;
-  border-left: 3px solid #4a6fa5 !important;
-}
 
 
+  /* 子级导航链接（层级缩进后） */
+    .nav-list .nav-list .nav-list-link {
+      color: #ffffff !important;
+    }
+
+  /* 子级导航默认状态：白色文字 */
+  .side-bar .nav-list .nav-list .nav-list-link {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  /* 子级导航悬停：白色背景 + 黑色文字 */
+  .side-bar .nav-list .nav-list .nav-list-link:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+  }
 
 
+  /* 侧边栏底部页脚文字 */
+  .site-footer {
+    color: #6b7c93 !important;   /* 中灰蓝，和背景协调 */
+    font-size: 0.75rem !important;
+  }
 
+  /* 页脚里的链接 */
+  .site-footer a {
+    color: #84bbee !important;
+  }
+
+  .site-footer a:hover {
+    color: #84bbee !important;
+  }
 
   /* 搜索框 */
   .search-input {
@@ -84,42 +80,48 @@
     color: #000000 !important;
   }
 
+
+  /* 正文内容容器：取消最大宽度限制，靠左排列 */
+  .main-content-wrap {
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   /* 正文文字 */
   .main-content {
     color: #2c3e50 !important;
   }
 
 
-/* 正文内容容器：取消最大宽度限制，靠左排列 */
-.main-content {
-  max-width: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
+  /* 正文内容容器：取消最大宽度限制，靠左排列 */
+  .main-content {
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
 
-/* 侧边栏底部页脚文字 */
-.site-footer {
-  color: #93a2b6 !important; 
-  font-size: 0.75rem !important;
-}
+  /* 侧边栏底部页脚文字 */
+  .site-footer {
+    color: #93a2b6 !important; 
+    font-size: 0.75rem !important;
+  }
 
-/* 页脚里的链接 */
-.site-footer a {
-  color: #84bbee !important;
-}
+  /* 页脚里的链接 */
+  .site-footer a {
+    color: #84bbee !important;
+  }
 
-.site-footer a:hover {
-  color: #84bbee !important;
-}
-
+  .site-footer a:hover {
+    color: #84bbee !important;
+  }
 </style>
 
 
 
-
 <script>
-/* 隐藏正文末尾的自动子页面列表 */
+  /* 隐藏正文末尾的自动子页面列表 */
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('h2.text-delta').forEach(function (el) {
       if (el.textContent.trim() === 'Table of contents') {
