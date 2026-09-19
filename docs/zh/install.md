@@ -2,7 +2,7 @@
 layout: default
 title: 安装指南
 parent: 中文首页
-nav_order: 5
+nav_order: 2
 has_children: true   # 告诉主题这个页面有子页面
 ---
 
