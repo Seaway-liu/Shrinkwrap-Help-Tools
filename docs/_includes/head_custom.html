@@ -98,20 +98,30 @@
   }
 
 
-  /* === 新增：正文靠左 === */
-  #main-content {
+  /* === 正文靠左：改父级 .main才是真正管用的 === */
+  .main {
     max-width: none !important;
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0 !important;   /* 关键：把内边距也清零 */
-    background: rgba(255, 255, 0, 0.6) !important;  /* 黄色，盖住蓝色 */
-    outline: 3px solid red !important;               /* 红边，看清边界 */
+    margin-left: 13rem !important; /* 与侧边栏宽度一致 */
   }
 
+  /* 正文容器也放开，避免内部再限宽 */
+  #main-content {
+    max-width: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* 去掉正文外层的左内边距，让它贴紧侧边栏 */
   .main-content-wrap {
-    padding-left: 0 !important;   /* 顺手把父级的 padding 也清零试试 */
-    background: rgba(0, 255, 0, 0.25) !important;  /* 绿色，看父级范围 */
+    padding-left: 0 !important;
+  }
+
+  /* 小屏幕下侧边栏会隐藏，正文回到全宽 */
+  @media (max-width: 50rem) {
+    .main {
+      margin-left: 0 !important;
+    }
   }
 
 
