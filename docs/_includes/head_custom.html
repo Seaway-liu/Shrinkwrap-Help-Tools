@@ -8,12 +8,13 @@
 
   /* 侧边栏顶部站点标题 */
   .site-title {
+    font-size: 1.3rem;
     color: #f7fbff !important; 
   }
 
   /* 侧边栏默认起始文字颜色 */
   .nav-list-link {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #e5e8ec !important; 
   }
 
@@ -93,12 +94,13 @@
 .main-content {
   max-width: none !important;
   margin-left: 0 !important;
-  margin-right: auto !important;
+  margin-right: 0 !important;
 }
+
 
 /* 侧边栏底部页脚文字 */
 .site-footer {
-  color: #6b7c93 !important;   /* 中灰蓝，和背景协调 */
+  color: #93a2b6 !important; 
   font-size: 0.75rem !important;
 }
 
@@ -115,8 +117,9 @@
 
 
 
-/* 隐藏正文末尾的自动子页面列表 */
+
 <script>
+/* 隐藏正文末尾的自动子页面列表 */
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('h2.text-delta').forEach(function (el) {
       if (el.textContent.trim() === 'Table of contents') {
